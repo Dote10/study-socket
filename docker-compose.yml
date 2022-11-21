@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  redis:
+    image: redis
+    restart: always
+    container_name: chat-redis
+    ports:
+      - 6377:6379
